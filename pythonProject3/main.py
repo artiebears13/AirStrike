@@ -8,7 +8,7 @@ import Rocket
 if __name__ == "__main__":
 
     bases = []
-    with open('targets.txt', "r") as file:
+    with open('military_bases.txt', "r") as file:
         for line in file:
             x, y, w = map(int, line.split())
             bases.append(Base.Base(x, y, w))
